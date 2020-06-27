@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://seonghbae.github.io/author/seonghbae/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://seonghbae.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-06-28T00:45:47+09:00</updated>
+  <updated>2020-06-27T16:25:55+00:00</updated>
   <id>https://seonghbae.github.io/author/seonghbae/feed.xml</id>
 
   
@@ -34,8 +34,8 @@
     <entry>
       <title type="html">Python 강좌(2) - Python 제어문</title>
       <link href="https://seonghbae.github.io/python-control-statement" rel="alternate" type="text/html" title="Python 강좌(2) - Python 제어문" />
-      <published>2020-06-27T11:39:00+09:00</published>
-      <updated>2020-06-27T11:39:00+09:00</updated>
+      <published>2020-06-27T02:39:00+00:00</published>
+      <updated>2020-06-27T02:39:00+00:00</updated>
       <id>https://seonghbae.github.io/python-control-statement</id>
       <content type="html" xml:base="https://seonghbae.github.io/python-control-statement">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -227,10 +227,44 @@ exclude:
     </entry>
   
     <entry>
+      <title type="html">Jekyll 강좌(1) - 블로그 만들기</title>
+      <link href="https://seonghbae.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll 강좌(1) - 블로그 만들기" />
+      <published>2020-06-26T22:42:00+00:00</published>
+      <updated>2020-06-26T22:42:00+00:00</updated>
+      <id>https://seonghbae.github.io/jekyll-basic</id>
+      <content type="html" xml:base="https://seonghbae.github.io/jekyll-basic">&lt;p&gt;이 글은 jekyll basic 입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>seonghbae</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Jekyll" />
+      
+
+      
+        <summary type="html">이 글은 jekyll basic 입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Python 강좌(1) - Python 기본</title>
       <link href="https://seonghbae.github.io/python-basic" rel="alternate" type="text/html" title="Python 강좌(1) - Python 기본" />
-      <published>2020-06-27T07:42:00+09:00</published>
-      <updated>2020-06-27T07:42:00+09:00</updated>
+      <published>2020-06-26T22:42:00+00:00</published>
+      <updated>2020-06-26T22:42:00+00:00</updated>
       <id>https://seonghbae.github.io/python-basic</id>
       <content type="html" xml:base="https://seonghbae.github.io/python-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -266,40 +300,6 @@ exclude:
 
       
         <summary type="html">Python 강좌는 여러 절로 구성되어 있습니다. Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Jekyll 강좌(1) - 블로그 만들기</title>
-      <link href="https://seonghbae.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll 강좌(1) - 블로그 만들기" />
-      <published>2020-06-27T07:42:00+09:00</published>
-      <updated>2020-06-27T07:42:00+09:00</updated>
-      <id>https://seonghbae.github.io/jekyll-basic</id>
-      <content type="html" xml:base="https://seonghbae.github.io/jekyll-basic">&lt;p&gt;이 글은 jekyll basic 입니다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>seonghbae</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Jekyll" />
-      
-
-      
-        <summary type="html">이 글은 jekyll basic 입니다.</summary>
       
 
       

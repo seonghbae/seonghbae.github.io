@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://seonghbae.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://seonghbae.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-06-28T00:45:47+09:00</updated>
+  <updated>2020-06-27T16:25:55+00:00</updated>
   <id>https://seonghbae.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -34,8 +34,8 @@
     <entry>
       <title type="html">Jekyll 강좌(1) - 블로그 만들기</title>
       <link href="https://seonghbae.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll 강좌(1) - 블로그 만들기" />
-      <published>2020-06-27T07:42:00+09:00</published>
-      <updated>2020-06-27T07:42:00+09:00</updated>
+      <published>2020-06-26T22:42:00+00:00</published>
+      <updated>2020-06-26T22:42:00+00:00</updated>
       <id>https://seonghbae.github.io/jekyll-basic</id>
       <content type="html" xml:base="https://seonghbae.github.io/jekyll-basic">&lt;p&gt;이 글은 jekyll basic 입니다.&lt;/p&gt;</content>
 

@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://seonghbae.github.io/author/seonghbae/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://seonghbae.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-06-27T16:25:55+00:00</updated>
+  <updated>2020-08-10T19:02:19+00:00</updated>
   <id>https://seonghbae.github.io/author/seonghbae/feed.xml</id>
 
   
@@ -30,6 +30,130 @@
   
   
 
+  
+    <entry>
+      <title type="html">백준 10828 스택 구현</title>
+      <link href="https://seonghbae.github.io/backjoon-stack" rel="alternate" type="text/html" title="백준 10828 스택 구현" />
+      <published>2020-08-10T04:00:00+00:00</published>
+      <updated>2020-08-10T04:00:00+00:00</updated>
+      <id>https://seonghbae.github.io/backjoon-stack</id>
+      <content type="html" xml:base="https://seonghbae.github.io/backjoon-stack">&lt;p&gt;백준 10828 스택 자바 구현입니다.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;import java.util.Scanner;
+
+public class Main {
+    private int top;
+    private int maxSize;
+    private Object[] stack;
+
+    public Main(int maxSize){
+        this.maxSize = maxSize;
+        this.stack = new Object[maxSize];
+        this.top = -1;
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str;
+        Main stack = new Main(sc.nextInt() + 1);
+        int i;
+        for (i=0; i&amp;lt;stack.maxSize; i++){
+            str = sc.nextLine();
+            if (str.contains(&amp;quot;push&amp;quot;)) {
+                String[] temp = str.split(&amp;quot; &amp;quot;);
+                stack.push(Integer.parseInt(temp[1]));
+            }
+            else {
+                switch (str) {
+                case &amp;quot;pop&amp;quot;:
+                    stack.pop();
+                    break;
+                case &amp;quot;size&amp;quot;:
+                    stack.size();
+                    break;
+                case &amp;quot;empty&amp;quot;:
+                    stack.empty();
+                    break;
+                case &amp;quot;top&amp;quot;:
+                    stack.top();
+                    break;
+                }
+            }
+        }
+        
+        sc.close();
+    }
+
+    public void push(int X){
+        this.top++;
+        this.stack[this.top] = X;
+    }
+    
+    public void pop() {
+        if (this.top == -1) {
+            System.out.println(&amp;quot;-1&amp;quot;);
+        }
+        else {
+            System.out.println(this.stack[this.top]);
+            this.stack[this.top] = -1;
+            this.top--;
+        }
+    }
+    
+    public void size() {
+        if (this.top == -1) {
+            System.out.println(&amp;#39;0&amp;#39;);
+        }
+        else {
+            System.out.println(this.top + 1);
+        }
+    }
+    
+    public void empty() {
+        if (this.top == -1) {
+            System.out.println(&amp;#39;1&amp;#39;);
+        }
+        else {
+            System.out.println(&amp;#39;0&amp;#39;);
+        }
+    }
+    
+    public void top() {
+        if (this.top == -1) {
+            System.out.println(&amp;quot;-1&amp;quot;);
+        }
+        else {
+            System.out.println(this.stack[this.top]);
+        }
+    }
+}&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/seonghbae/468eff1e3742639f15ee47f1f150296d.js&quot;&gt; &lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>seonghbae</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="datastructure" />
+      
+
+      
+        <summary type="html">백준 10828 스택 자바 구현입니다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Python 강좌(2) - Python 제어문</title>

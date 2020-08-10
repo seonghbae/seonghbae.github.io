@@ -184,6 +184,15 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "backjoon-stack": {
+        "title": "백준 10828 스택 구현",
+            "author": "seonghbae",
+            "category": "",
+            "content": "백준 10828 스택 자바 구현입니다.import java.util.Scanner;public class Main {    private int top;    private int maxSize;    private Object[] stack;    public Main(int maxSize){        this.maxSize = maxSize;        this.stack = new Object[maxSize];        this.top = -1;    }    public static void main(String[] args){        Scanner sc = new Scanner(System.in);        String str;        Main stack = new Main(sc.nextInt() + 1);        int i;        for (i=0; i&lt;stack.maxSize; i++){            str = sc.nextLine();            if (str.contains(&quot;push&quot;)) {                String[] temp = str.split(&quot; &quot;);                stack.push(Integer.parseInt(temp[1]));            }            else {                switch (str) {                case &quot;pop&quot;:                    stack.pop();                    break;                case &quot;size&quot;:                    stack.size();                    break;                case &quot;empty&quot;:                    stack.empty();                    break;                case &quot;top&quot;:                    stack.top();                    break;                }            }        }                sc.close();    }    public void push(int X){        this.top++;        this.stack[this.top] = X;    }        public void pop() {        if (this.top == -1) {            System.out.println(&quot;-1&quot;);        }        else {            System.out.println(this.stack[this.top]);            this.stack[this.top] = -1;            this.top--;        }    }        public void size() {        if (this.top == -1) {            System.out.println(&#39;0&#39;);        }        else {            System.out.println(this.top + 1);        }    }        public void empty() {        if (this.top == -1) {            System.out.println(&#39;1&#39;);        }        else {            System.out.println(&#39;0&#39;);        }    }        public void top() {        if (this.top == -1) {            System.out.println(&quot;-1&quot;);        }        else {            System.out.println(this.stack[this.top]);        }    }}",
+        "url": "/backjoon-stack"
+    }
+    ,
+    
     "python-control-statement": {
         "title": "Python 강좌(2) - Python 제어문",
             "author": "seonghbae",

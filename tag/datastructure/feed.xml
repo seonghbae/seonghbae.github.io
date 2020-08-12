@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://seonghbae.github.io/tag/datastructure/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://seonghbae.github.io/" rel="alternate" type="text/html" />
-  <updated>2020-08-10T19:09:55+00:00</updated>
+  <updated>2020-08-12T14:33:01+00:00</updated>
   <id>https://seonghbae.github.io/tag/datastructure/feed.xml</id>
 
   
@@ -30,6 +30,151 @@
   
   
 
+  
+    <entry>
+      <title type="html">백준 10845 큐 구현</title>
+      <link href="https://seonghbae.github.io/backjoon-queue" rel="alternate" type="text/html" title="백준 10845 큐 구현" />
+      <published>2020-08-12T11:28:00+00:00</published>
+      <updated>2020-08-12T11:28:00+00:00</updated>
+      <id>https://seonghbae.github.io/backjoon-queue</id>
+      <content type="html" xml:base="https://seonghbae.github.io/backjoon-queue">&lt;p&gt;백준 10845 큐 자바 구현입니다.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;import java.util.Scanner;
+
+public class Main {
+    private int front;
+    private int back;
+    private int maxSize;
+    private Object[] queue;
+
+    public Main(int maxSize){
+        this.maxSize = maxSize;
+        this.queue = new Object[maxSize];
+        this.front = -1;
+        this.back = -1;
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str;
+        Main queue = new Main(sc.nextInt() + 1);
+        int i;
+        for (i=0; i&amp;lt;queue.maxSize; i++){
+            str = sc.nextLine();
+            if (str.contains(&amp;quot;push&amp;quot;)) {
+                String[] temp = str.split(&amp;quot; &amp;quot;);
+                queue.push(Integer.parseInt(temp[1]));
+            }
+            else {
+                switch (str) {
+                case &amp;quot;pop&amp;quot;:
+                    queue.pop();
+                    break;
+                case &amp;quot;size&amp;quot;:
+                    queue.size();
+                    break;
+                case &amp;quot;empty&amp;quot;:
+                    queue.empty();
+                    break;
+                case &amp;quot;front&amp;quot;:
+                    queue.front();
+                    break;
+                case &amp;quot;back&amp;quot;:
+                    queue.back();
+                    break;
+                }
+            }
+        }
+        
+        sc.close();
+    }
+
+    public void push(int X){
+        if(this.front == -1) {
+            this.front++;
+            this.back++;
+            this.queue[this.back] = X;
+        }
+        else {
+            this.back++;
+            this.queue[this.back] = X;
+        }
+    }
+    
+    public void pop() {
+        if (this.front == -1 || this.front &amp;gt; this.back) {
+            System.out.println(&amp;quot;-1&amp;quot;);
+        }
+        else {
+            System.out.println(this.queue[this.front]);
+            this.queue[this.front] = -1;
+            this.front++;
+        }
+    }
+    
+    public void size() {
+        if (this.front == -1 || this.front &amp;gt; this.back) {
+            System.out.println(&amp;#39;0&amp;#39;);
+        }
+        else {
+            System.out.println(this.back - this.front + 1);
+        }
+    }
+    
+    public void empty() {
+        if (this.front == -1 || this.front &amp;gt; this.back) {
+            System.out.println(&amp;#39;1&amp;#39;);
+        }
+        else {
+            System.out.println(&amp;#39;0&amp;#39;);
+        }
+    }
+    
+    public void front() {
+        if (this.front == -1 || this.front &amp;gt; this.back) {
+            System.out.println(&amp;quot;-1&amp;quot;);
+        }
+        else {
+            System.out.println(this.queue[this.front]);
+        }
+    }
+    
+    public void back() {
+        if (this.front == -1 || this.front &amp;gt; this.back) {
+            System.out.println(&amp;quot;-1&amp;quot;);
+        }
+        else {
+            System.out.println(this.queue[this.back]);
+        }
+    }
+}&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/seonghbae/bd9c543e73d406f64dddc64b054230ce.js&quot;&gt; &lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>seonghbae</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="datastructure" />
+      
+
+      
+        <summary type="html">백준 10845 큐 자바 구현입니다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">백준 10828 스택 구현</title>
